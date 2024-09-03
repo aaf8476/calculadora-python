@@ -1,31 +1,9 @@
-def somar(num1, num2):
-    return num1 + num2
-
-def subtrair(num1, num2):
-    return num1 - num2
-
-def multiplicar(num1, num2):
-    return num1 * num2
-
-def dividir(num1, num2):
-    if num2 != 0:
-        return num1 / num2
-    else:
-        return "Erro: Divisão por zero"
-
-def resto_divisao(num1, num2):
-    if num2 != 0:
-        return num1 % num2
-    else:
-        return "Erro: Divisão por zero"
-
-def mostrar_historico(historico):
-    if historico:
-        print("Histórico de operações:")
-        for operacao in historico:
-            print(operacao)
-    else:
-        print("Nenhuma operação realizada ainda.")
+from soma import somar
+from subtracao import subtrair
+from multiplicacao import multiplicar
+from divisao import dividir
+from resto_divisao import resto_divisao
+from mostrar_historico import mostrar_historico
 
 def main():
     historico = []
